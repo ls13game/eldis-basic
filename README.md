@@ -1,18 +1,18 @@
  <b>Elektronisches Leitstellen Dispositions- und Informationssystem by fren</b>
  
- <b>ELDIS wird nicht mehr weiterentwickelt.</b>
+ <b>ELDIS-Basic wird nicht mehr weiterentwickelt.</b>
  
-ELDIS ist ein Elektronisches Leitstellen Dispositions- und Informationssystem für Notruf 112 & 2 Clans, Funkspiele und andere HiOrg-Gruppen.
+ELDIS-Basic ist ein Elektronisches Leitstellen Dispositions- und Informationssystem für Notruf 112 & 2 Clans, Funkspiele und andere HiOrg-Gruppen.
 
 
 
-ELDIS ist momentan leider nur für Feuerwehren erhältlich.
+ELDIS-Basic ist momentan leider nur für Feuerwehren erhältlich.
 
 Man kann jedoch selber mehr hinzufügen da sie Open-Source ist.
 
-<b>Was braucht man für ELDIS?</b>
+<b>Was braucht man für ELDIS-Basic?</b>
 
-Vorraussetzungen für das ELDIS System:
+Vorraussetzungen für das ELDIS-Basic System:
 
 1.) Windows Betriebssystem
 
@@ -20,7 +20,7 @@ Vorraussetzungen für das ELDIS System:
 
 3.) MySQL Datenbank (Am besten mit einer phpMyAdmin Administrationsoberfläche)
 
-<b>Was kann ELDIS?</b>
+<b>Was kann ELDIS-Basic?</b>
 
 DME (Digital Meldeempfänger): Zum disponieren von Nutzern
 
