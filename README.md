@@ -37,7 +37,11 @@ Beförderung bzw. Dienstgrade: -
 
 Mitwirkende:
 fren - developer
+
 fakertv - graphics and pictures
+
 sturmi - technican support
+
 amenofisch - helper
+
 and every beta-tester for testing. thank you! <3
