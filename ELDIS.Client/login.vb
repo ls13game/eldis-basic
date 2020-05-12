@@ -39,7 +39,7 @@ Public Class login
                     Dim usertype = Reader.GetString(4)
                     Dim username = Reader.GetString(1)
                     Dim id = Reader.GetString(0)
-                    Dim fraction = Reader.GetString(8)
+                    Dim fraction = Reader.GetString(6)
                     My.Settings.id = id
                     My.Settings.benutzername = username
                     My.Settings.usertype = usertype
