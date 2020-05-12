@@ -29,8 +29,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `sis_users` (
   `id` int(255) NOT NULL,
   `username` varchar(255) NOT NULL,
-  `passwort` text NOT NULL,
-  `steamid` varchar(255) NOT NULL,
+  `password` text NOT NULL,
+  `ip` varchar(255) NOT NULL,
   `usertype` varchar(255) NOT NULL,
   `created_at` varchar(255) NOT NULL DEFAULT 'current_timestamp()',
   `fraktion` varchar(255) NOT NULL,
