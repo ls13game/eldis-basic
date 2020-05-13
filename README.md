@@ -1,4 +1,4 @@
- <b>Elektronisches Leitstellen Dispositions- und Informationssystem by fren</b>
+# Elektronisches Leitstellen Dispositions- und Informationssystem by fren
  
  <b>ELDIS-Basic wird nicht mehr weiterentwickelt.</b>
  
@@ -28,11 +28,7 @@ FMS (Funkmeldesystem)       : Zum Versenden von Fahrzeugstatusen an die Leitstel
 
 Einsatzberichte             : Aufzeichnung von Einsatzabläufen
 
-Alarmstufen und Meldebilder : -
-
 Benutzerverwaltung          : -
-
-Beförderung bzw. Dienstgrade: -
 
 ------------------------------------------------------------------------------
 
