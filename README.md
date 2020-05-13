@@ -1,3 +1,7 @@
+![ELDIS-BASIC](https://cdn.discordapp.com/attachments/394652887214587904/615593414074826797/Logo2.png?size=180)
+
+
+
 # Elektronisches Leitstellen Dispositions- und Informationssystem by fren #
 
  ELDIS-Basic ist ein Elektronisches Leitstellen Dispositions- und Informationssystem für Notruf 112 & 2 Clans, Funkspiele und andere HiOrg-Gruppen.
