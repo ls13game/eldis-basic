@@ -46,7 +46,7 @@ Public Class hauptmenu
         GetEinsatze()
         Dim Uhrzeit = DateTime.Now.ToString("HH:mm:ss") & " Uhr | "
         Try
-            client.Connect("DEINE IP", 8888) ' hier die ip des servers eintragen. 
+            client.Connect("DEINE IP", 8000) ' hier die ip des servers eintragen. 
             ' da dieser beim testen wohl lokal läuft, hier die loopback-ip 127.0.0.1.
             If client.Connected Then
                 stream = client.GetStream

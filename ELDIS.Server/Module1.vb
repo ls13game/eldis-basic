@@ -7,7 +7,7 @@ Imports System.Text
 Module Module1
     Private server As TcpListener
     Private client As New TcpClient
-    Private ipendpoint As IPEndPoint = New IPEndPoint(IPAddress.Any, 4444) ' eingestellt ist port 8000. dieser muss ggf. freigegeben sein!
+    Private ipendpoint As IPEndPoint = New IPEndPoint(IPAddress.Any, 8000) ' eingestellt ist port 8000. dieser muss ggf. freigegeben sein!
     Private list As New List(Of Connection)
     Private Structure Connection
         Dim stream As NetworkStream
