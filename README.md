@@ -1,14 +1,13 @@
-# Elektronisches Leitstellen Dispositions- und Informationssystem by fren
+# Elektronisches Leitstellen Dispositions- und Informationssystem by fren #
+------------------------------------------------------------------------------
+
+ ELDIS-Basic ist ein Elektronisches Leitstellen Dispositions- und Informationssystem für Notruf 112 & 2 Clans, Funkspiele und andere HiOrg-Gruppen.
  
- <b>ELDIS-Basic wird nicht mehr weiterentwickelt.</b>
- 
-ELDIS-Basic ist ein Elektronisches Leitstellen Dispositions- und Informationssystem für Notruf 112 & 2 Clans, Funkspiele und andere HiOrg-Gruppen.
-
-
-
+------------------------------------------------------------------------------
+Jedoch kannst DU es erweitern, dafür ist ELDIS jetzt Open-Source. Lass deinen Grenzen freien Lauf und zeig uns dein ELDIS!
 ELDIS-Basic ist momentan leider nur für Feuerwehren erhältlich.
 
-Man kann jedoch selber mehr hinzufügen da sie Open-Source ist.
+------------------------------------------------------------------------------
 
 <b>Was braucht man für ELDIS-Basic?</b>
 
