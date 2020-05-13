@@ -38,15 +38,6 @@ Public Class pager
     End Sub
 
 
-    Private Sub DownloadAndPlaySprachaufnahme()
-        If System.IO.File.Exists(FilePath) Then
-            SpieleSprachaufnahme()
-        Else
-            My.Computer.Network.DownloadFile("ftp://134.255.220.24/Sprachaufnahme/Sprachaufnahme.mp3", "C:/Sprachaufnahme.mp3", "Administrator", "9PyTh848v[5yH4j-KO")
-        End If
-
-    End Sub
-
     Private Sub SpieleSprachaufnahme()
         '        My.Computer.Audio.Play("C:/Sprachaufnahme.mp3",
         'AudioPlayMode.Background)
@@ -54,16 +45,9 @@ Public Class pager
         PlaySound(FilePath, Nothing, SND_FILENAME Or SND_ASYNC)
     End Sub
 
-    Private Sub DeleteSprachaufnahme()
-        Dim request As Net.FtpWebRequest = Net.FtpWebRequest.Create("ftp://134.255.220.24/Sprachaufnahme/Sprachaufnahme.mp3")
-        request.Method = Net.WebRequestMethods.Ftp.DeleteFile
-        request.Credentials = New Net.NetworkCredential("Administrator", "9PyTh848v[5yH4j-KO")
-        Dim response As Net.FtpWebResponse = request.GetResponse()
-    End Sub
-
     Private Sub pager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            client.Connect("134.255.220.24", 8000) ' hier die ip des servers eintragen. 
+            client.Connect("DEINE IP", 8000) ' hier die ip des servers eintragen. 
             ' da dieser beim testen wohl lokal läuft, hier die loopback-ip 127.0.0.1.
             If client.Connected Then
                 stream = client.GetStream
@@ -111,11 +95,4 @@ Public Class pager
         Me.Hide()
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        DeleteSprachaufnahme()
-    End Sub
-
-    Private Sub BackgroundWorker1_DoWork(sender As Object, e As DoWorkEventArgs) Handles BackgroundWorker1.DoWork
-
-    End Sub
 End Class

@@ -35,7 +35,7 @@ Public Class edit_einsatzbericht
             einsatznummer_box.Text = My.Settings.currenteinsatzid
             einsatzart_box.Text = myReader.GetString(1) & " | " & myReader.GetString(2)
             einsatzort_box.Text = myReader.GetString(8)
-            disponent_box.Text = myReader.GetString(9)
+            disponent_box.Text = myReader.GetString(10)
             situation.Text = myReader.GetString(11)
             tätigkeiten.Text = myReader.GetString(12)
             verbrauch.Text = myReader.GetString(13)

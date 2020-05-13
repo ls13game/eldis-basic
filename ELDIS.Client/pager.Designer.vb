@@ -33,9 +33,10 @@ Partial Class pager
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ELP___GrandTheftAustria.My.Resources.Resources._32_0
-        Me.PictureBox1.Location = New System.Drawing.Point(-7, 1)
+        Me.PictureBox1.Location = New System.Drawing.Point(-10, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(213, 272)
+        Me.PictureBox1.Size = New System.Drawing.Size(320, 418)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -44,10 +45,11 @@ Partial Class pager
         '
         Me.pager_text.BackColor = System.Drawing.Color.Orange
         Me.pager_text.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.pager_text.Location = New System.Drawing.Point(37, 31)
+        Me.pager_text.Location = New System.Drawing.Point(56, 48)
+        Me.pager_text.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pager_text.Name = "pager_text"
         Me.pager_text.ReadOnly = True
-        Me.pager_text.Size = New System.Drawing.Size(124, 81)
+        Me.pager_text.Size = New System.Drawing.Size(186, 125)
         Me.pager_text.TabIndex = 1
         Me.pager_text.Text = ""
         '
@@ -60,12 +62,13 @@ Partial Class pager
         '
         'pager
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(196, 273)
+        Me.ClientSize = New System.Drawing.Size(294, 420)
         Me.Controls.Add(Me.pager_text)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "pager"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Pager"

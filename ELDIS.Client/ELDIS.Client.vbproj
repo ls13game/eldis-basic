@@ -49,10 +49,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ComputerInfo">
-      <HintPath>G:\OwnCloud - Games\ELDIS Portable Version\ELDIS\ComputerInfo.dll</HintPath>
+      <HintPath>..\ComputerInfo.dll</HintPath>
     </Reference>
     <Reference Include="MetroSuite 2.0">
-      <HintPath>G:\OwnCloud - Games\ELDIS Portable Version\ELDIS\MetroSuite 2.0.dll</HintPath>
+      <HintPath>..\MetroSuite 2.0.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -61,7 +61,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="MySql.Data">
-      <HintPath>G:\OwnCloud - Games\ELDIS Portable Version\ELDIS\MySql.Data.dll</HintPath>
+      <HintPath>..\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="OeMod.UI">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\ELFDIS\OeMod.UI.dll</HintPath>

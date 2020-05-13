@@ -9,6 +9,7 @@ Public Class hauptmenu
     Private streamw As StreamWriter
     Private streamr As StreamReader
     Private client As New TcpClient
+    Private t As New Threading.Thread(AddressOf Listen)
     Private Delegate Sub DAddItem(ByVal s As String)
     Private nick As String = My.Settings.benutzername
     Dim Uhrzeit As String
@@ -40,22 +41,20 @@ Public Class hauptmenu
     Private Sub hauptmenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AlarmUhrzeit = DateTime.Now.ToString("dd/MM/yyyy: " & DateTime.Now.ToString("HH:mm:ss"))
         Me.Text = "ELDIS @" & My.Settings.benutzername & " [" & Me.GetType.Assembly.GetName.Version.ToString & "]"
-        pager.Show()
-        pager.Hide()
         conn = New MySqlConnection()
         conn.ConnectionString = (“server=" & My.Settings.mysqlserver & " ;userid=" & My.Settings.mysqluser & ";password=" & My.Settings.mysqlpassword & ";database=" & My.Settings.mysqldatabase & "")
-        GetIPFromClient()
         GetEinsatze()
         Dim Uhrzeit = DateTime.Now.ToString("HH:mm:ss") & " Uhr | "
         Try
-            client.Connect("134.255.220.24", 8000) ' hier die ip des servers eintragen. 
+            client.Connect("DEINE IP", 8888) ' hier die ip des servers eintragen. 
             ' da dieser beim testen wohl lokal läuft, hier die loopback-ip 127.0.0.1.
             If client.Connected Then
                 stream = client.GetStream
                 streamw = New StreamWriter(stream)
                 streamr = New StreamReader(stream)
-                streamw.WriteLine(Uhrzeit & nick) ' das ist optional.
+                streamw.WriteLine(nick) ' das ist optional.
                 streamw.Flush()
+                t.Start()
             Else
                 MessageBox.Show("Verbindung zum Server nicht möglich!")
                 Application.Exit()
@@ -64,6 +63,7 @@ Public Class hauptmenu
             MessageBox.Show("Verbindung zum Server nicht möglich!")
             Application.Exit()
         End Try
+
 
         If My.Settings.usertype = "user" Then
             eldis_tabcontrol.TabPages.Remove(eldis_einsatzerfassung)
@@ -83,6 +83,18 @@ Public Class hauptmenu
         initELDIS.Dock = DockStyle.Fill
         initELDIS.BackColor = Color.White
     End Sub
+
+    Private Sub Listen()
+        While client.Connected
+            Try
+
+            Catch
+                MessageBox.Show("Verbindung zum Server nicht möglich!")
+                Application.Exit()
+            End Try
+        End While
+    End Sub
+
 
     Private Sub initELDIS_timer_Tick(sender As Object, e As EventArgs) Handles initELDIS_timer.Tick
         initELDIS.Visible = False
@@ -112,17 +124,6 @@ Public Class hauptmenu
         conn.Open()
         Dim QueryID As String
         QueryID = "insert into sis_fw_einsatz (datum,status,disponent,islocked,idlocked) values ('" & AlarmUhrzeit & "','" & "OFFEN" & "','" & My.Settings.benutzername & "','" & "yes" & "','" & My.Settings.id & "')"
-        COMMAND = New MySqlCommand(QueryID, conn)
-        READER = COMMAND.ExecuteReader
-        READER.Close()
-        conn.Close()
-    End Sub
-    Private Sub GetIPFromClient()
-        conn.Open()
-        Dim QueryID As String
-        Dim ClientIP As String
-        ClientIP = ComputerInfo.Info.Network.get_LocalIP
-        QueryID = "UPDATE sis_users SET user_ip = '" & ClientIP & "' WHERE id = '" & My.Settings.id & "'"
         COMMAND = New MySqlCommand(QueryID, conn)
         READER = COMMAND.ExecuteReader
         READER.Close()
@@ -302,7 +303,6 @@ Public Class hauptmenu
 
     Private Sub GetEinsatze()
         Dim conn As MySqlConnection
-        Dim reader As MySqlDataReader
         Dim cmd As New MySqlCommand
         conn = New MySqlConnection()
         conn.ConnectionString = (“server=" & My.Settings.mysqlserver & " ;userid=" & My.Settings.mysqluser & ";password=" & My.Settings.mysqlpassword & ";database=" & My.Settings.mysqldatabase & "")

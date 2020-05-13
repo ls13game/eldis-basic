@@ -7,7 +7,7 @@ Imports System.Text
 Module Module1
     Private server As TcpListener
     Private client As New TcpClient
-    Private ipendpoint As IPEndPoint = New IPEndPoint(IPAddress.Any, 8000) ' eingestellt ist port 8000. dieser muss ggf. freigegeben sein!
+    Private ipendpoint As IPEndPoint = New IPEndPoint(IPAddress.Any, 4444) ' eingestellt ist port 8000. dieser muss ggf. freigegeben sein!
     Private list As New List(Of Connection)
     Private Structure Connection
         Dim stream As NetworkStream
@@ -32,29 +32,6 @@ Module Module1
     Sub Main()
 
         Console.WriteLine("ELDIS-Server gestartet!")
-        'Dim tcpClient As New System.Net.Sockets.TcpClient()
-        'tcpClient.Connect("92.42.47.190", "10011")
-        'Dim networkStream As Sockets.NetworkStream = tcpClient.GetStream()
-        'Dim sendBytes As [Byte]()
-        'sendBytes = Encoding.ASCII.GetBytes("login eldis qNhFatFm" + vbCrLf)
-        'networkStream.Write(sendBytes, 0, sendBytes.Length)
-        'sendBytes = Encoding.ASCII.GetBytes("use sid=1" + vbCrLf)
-        'networkStream.Write(sendBytes, 0, sendBytes.Length)
-        'sendBytes = Encoding.ASCII.GetBytes("clientupdate client_nickname=ELS" + vbCrLf)
-        'networkStream.Write(sendBytes, 0, sendBytes.Length)
-        'sendBytes = Encoding.ASCII.GetBytes("sendtextmessage targetmode=3 target=1 msg=[b][Color=green]ELDIS-Server\sgestartet!\s" + vbCrLf)
-        'networkStream.Write(sendBytes, 0, sendBytes.Length)
-        'sendBytes = Encoding.ASCII.GetBytes("logout" + vbCrLf)
-        'networkStream.Write(sendBytes, 0, sendBytes.Length)
-        'If Not networkStream.CanRead Then
-        '    Console.WriteLine("cannot not write data to this stream")
-        '    tcpClient.Close()
-        'Else
-        '    If Not networkStream.CanWrite Then
-        '        Console.WriteLine("cannot read data from this stream")
-        '        tcpClient.Close()
-        '    End If
-        'End If
         '' pause so user can view the console output
 
 

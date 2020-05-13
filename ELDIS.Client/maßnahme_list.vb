@@ -1,15 +1,9 @@
 ﻿Public Class maßnahme_list
     Dim maßnahmetext As String
     Private Sub maßnahme_list_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        maßnahmen_list.Rows.Add("LS-Polizei Los Santos verständigen")
-        maßnahmen_list.Rows.Add("LS-Rotes Kreuz Los Santos verständigen")
-        maßnahmen_list.Rows.Add("LS-FW Sandy-Shores nachalamieren")
-        maßnahmen_list.Rows.Add("LS-FW Blane-Country nachalamieren")
-        maßnahmen_list.Rows.Add("LS-FW Paleto-Bay nachalamieren")
-        maßnahmen_list.Rows.Add("LS-FW LFKDT verständigen")
-        maßnahmen_list.Rows.Add("LS-FW LFKDT-STV verständigen")
-        maßnahmen_list.Rows.Add("LS-FW Dispo verständigen")
-        maßnahmen_list.Rows.Add("LS-FW ELDIS Techniker verständigen")
+        ' Mit dieser Function fügt man eine neue Maßnahme hinzu, wie sie funktioniert, und co, ist dir überlassen!
+        ' maßnahmen_list.Rows.Add("Maßnahmedemo")
+        ' Mit dieser Function fügt man eine neue Maßnahme hinzu, wie sie funktioniert, und co, ist dir überlassen!
     End Sub
 
     Private Sub maßnahmen_list_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles maßnahmen_list.CellDoubleClick

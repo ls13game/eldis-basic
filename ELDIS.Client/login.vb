@@ -39,50 +39,25 @@ Public Class login
                     Dim usertype = Reader.GetString(4)
                     Dim username = Reader.GetString(1)
                     Dim id = Reader.GetString(0)
-                    Dim fraction = Reader.GetString(6)
                     My.Settings.id = id
                     My.Settings.benutzername = username
                     My.Settings.usertype = usertype
 
-
-
-
                     If usertype = "admin" Then
                         For j = 0 To 500
                         Next
-                        My.Settings.usertype = usertype
-                        If fraction = "police" Then
-                            MsgBox("Du bist Polizist! Kein Feuerwehr'ler.", MsgBoxStyle.Critical)
-                        ElseIf fraction = "ambulance" Then
-                            MsgBox("Du bist Sanit�ter! Kein Feuerwehr'ler.", MsgBoxStyle.Critical)
-                        ElseIf fraction = "fire" Then
-                            hauptmenu.Show()
+                        hauptmenu.Show()
                             Me.Hide()
-                        End If
-                    ElseIf usertype = "disponent" Then
+                        ElseIf usertype = "disponent" Then
                         For j = 0 To 500
                         Next
-                        My.Settings.usertype = usertype
-                        If fraction = "police" Then
-                            MsgBox("Du bist Polizist! Kein Feuerwehr'ler.", MsgBoxStyle.Critical)
-                        ElseIf fraction = "ambulance" Then
-                            MsgBox("Du bist Sanitäter! Kein Feuerwehr'ler.", MsgBoxStyle.Critical)
-                        ElseIf fraction = "fire" Then
-                            hauptmenu.Show()
-                            Me.Hide()
-                        End If
+                        hauptmenu.Show()
+                        Me.Hide()
                     ElseIf usertype = "user" Then
                         For j = 0 To 500
                         Next
-                        My.Settings.usertype = usertype
-                        If fraction = "police" Then
-                            MsgBox("Du bist Polizist! Kein Feuerwehr'ler.", MsgBoxStyle.Critical)
-                        ElseIf fraction = "ambulance" Then
-                            MsgBox("Du bist Sanitäter! Kein Feuerwehr'ler.", MsgBoxStyle.Critical)
-                        ElseIf fraction = "fire" Then
-                            hauptmenu.Show()
-                            Me.Hide()
-                        End If
+                        hauptmenu.Show()
+                        Me.Hide()
                     End If
 
                     conn.Close()

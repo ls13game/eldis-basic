@@ -132,14 +132,14 @@ Partial Class hauptmenu
         '
         Me.PagerToolStripMenuItem.Image = Global.ELP___GrandTheftAustria.My.Resources.Resources._32_0
         Me.PagerToolStripMenuItem.Name = "PagerToolStripMenuItem"
-        Me.PagerToolStripMenuItem.Size = New System.Drawing.Size(193, 34)
+        Me.PagerToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.PagerToolStripMenuItem.Text = "Pager"
         '
         'FunkgerätToolStripMenuItem
         '
         Me.FunkgerätToolStripMenuItem.Image = Global.ELP___GrandTheftAustria.My.Resources.Resources.motorola_mtp850_3l_tetra_pt911b
         Me.FunkgerätToolStripMenuItem.Name = "FunkgerätToolStripMenuItem"
-        Me.FunkgerätToolStripMenuItem.Size = New System.Drawing.Size(193, 34)
+        Me.FunkgerätToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.FunkgerätToolStripMenuItem.Text = "Funkgerät"
         '
         'DisponentToolStripMenuItem
@@ -152,7 +152,7 @@ Partial Class hauptmenu
         'EinsatzerfassungToolStripMenuItem
         '
         Me.EinsatzerfassungToolStripMenuItem.Name = "EinsatzerfassungToolStripMenuItem"
-        Me.EinsatzerfassungToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.EinsatzerfassungToolStripMenuItem.Size = New System.Drawing.Size(245, 34)
         Me.EinsatzerfassungToolStripMenuItem.Text = "Einsatzerfassung"
         '
         'AdminToolStripMenuItem
@@ -692,7 +692,6 @@ Partial Class hauptmenu
         Me.alarmundmelde_meldebildbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.alarmundmelde_meldebildbox.Enabled = False
         Me.alarmundmelde_meldebildbox.FormattingEnabled = True
-        Me.alarmundmelde_meldebildbox.Items.AddRange(New Object() {"Autobahn - Fahrzeugbrand", "Bahndammbrand", "Brandverdacht", "Flurbrand", "Kaminbrand", "Kleinbrand", "Müllbehälterbrand", "TUS- od. Infranet-Alarm", "Überhitzter Ofen", "Fahrzeugbrand", "Kellerbrand", "Küchenbrand", "Trafobrand", "Waldbrand", "Wohnungsbrand", "Zimmerbrand", "Brand in kl. Gewerbebetrieb", "Dachstuhlbrand", "Geschäftsbrand", "Gewerbebetrieb - klein", "Scheunen- od. Schuppenbrand", "Wohnhausbrand", "Gewerbebetrieb - groß", "Industrieobjekt", "Landw. Objekt", "Autobahn - Ölspur", "Benzin- bzw. Ölaustritt", "Benzin- bzw. Ölspur beseitigen", "Gasaustritt bzw. -gebrechen", "Autobahn - Schadstoffeinsatz", "Chlorgasaustritt", "Kl. Gewässerschaden", "Öltreiben", "Örtl. Chemieunfall", "Chemieunfall m. größeren Umweltschäden", "Tankwagenunfall", "Auspumparbeiten", "Autobahn - Bergung", "Bootsbergung", "Eisstoß", "Fahrzeugbergung", "Hochwasser", "LKW-Bergung", "Motorradbergung", "Person(en) in Aufzug", "Personensuche", "Sturmschaden", "Taucheinsatz", "Technische Hilfeleistung", "Tierrettung", "Türöffnung", "Unwettereinsatz", "Verkehrsunfall", "Wassergebrechen", "Wasserversorgung", "Autobahn - Menschenrettung", "Menschenrettung (1 eingekl. Person)", "Person in Notlage", "VU mit 1 eingekl. Person", "Autobahn - Schwere Bergung", "Autobusunfall", "Eisenbahnunglück", "Menschenrettung (mehrere eingekl. Personen)", "Schiffsunglück", "VU mit mehreren eingekl. Personen"})
         Me.alarmundmelde_meldebildbox.Location = New System.Drawing.Point(1336, 74)
         Me.alarmundmelde_meldebildbox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.alarmundmelde_meldebildbox.Name = "alarmundmelde_meldebildbox"
@@ -716,7 +715,6 @@ Partial Class hauptmenu
         Me.alarmundmelde_alarmstufebox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.alarmundmelde_alarmstufebox.Enabled = False
         Me.alarmundmelde_alarmstufebox.FormattingEnabled = True
-        Me.alarmundmelde_alarmstufebox.Items.AddRange(New Object() {"B1", "B2", "B3", "B4", "T1", "T2", "T3", "S1", "S2", "S3"})
         Me.alarmundmelde_alarmstufebox.Location = New System.Drawing.Point(14, 74)
         Me.alarmundmelde_alarmstufebox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.alarmundmelde_alarmstufebox.Name = "alarmundmelde_alarmstufebox"
