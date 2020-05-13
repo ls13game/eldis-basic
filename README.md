@@ -18,6 +18,9 @@ Vorraussetzungen für das ELDIS-Basic System:
 
 3.) MySQL Datenbank (Am besten mit einer phpMyAdmin Administrationsoberfläche)
 
+------------------------------------------------------------------------------
+
+
 <b>Was kann ELDIS-Basic?</b>
 
 DME (Digital Meldeempfänger): Zum disponieren von Nutzern
